@@ -26,11 +26,14 @@ export default function AccordionMenu({
         <div key={group.name} className="accordion__group">
           <button
             className={`accordion__header ${
-              openGroup === group.name ? "active" : ""
+              openGroup === group.name || selected === group.name
+                ? "active"
+                : ""
             }`}
-            onClick={() =>
-              setOpenGroup(openGroup === group.name ? null : group.name)
-            }
+            onClick={() => {
+              setOpenGroup(openGroup === group.name ? null : group.name);
+              onSelect(group.name);
+            }}
           >
             {group.name}
             <span className="accordion__icon"></span>

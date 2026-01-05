@@ -17,7 +17,7 @@ import {
   langES,
   hamburger,
 } from "@/assets";
-import SearchBar from "@/components/molecules/SearchBar";
+import SearchBar from "@/components/molecules/common/SearchBar";
 
 export default function Header() {
   const { lang } = useParams();

@@ -59,11 +59,11 @@ export default function Footer() {
 
   // 2. Redes Sociales
   const socialLinks = [
-    { name: "Facebook", icon: facebook, url: "#" },
-    { name: "Twitter", icon: twitter, url: "#" },
-    { name: "Google", icon: google, url: "#" },
-    { name: "Youtube", icon: youtube, url: "#" },
-    { name: "Instagram", icon: instagram, url: "#" },
+    { name: "Facebook", icon: facebook, url: "https://www.facebook.com/" },
+    { name: "Twitter", icon: twitter, url: "https://twitter.com/" },
+    { name: "Google", icon: google, url: "https://www.google.com/" },
+    { name: "Youtube", icon: youtube, url: "https://www.youtube.com/" },
+    { name: "Instagram", icon: instagram, url: "https://www.instagram.com/" },
   ];
 
   // 3. Métodos de Pago

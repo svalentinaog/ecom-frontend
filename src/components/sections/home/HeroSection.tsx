@@ -3,7 +3,7 @@ import { imageSection } from "@/assets";
 
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
-import Button from "@/components/atoms/Button";
+import Button from "@/components/atoms/CommonButton";
 
 export default function HeroSection() {
   const { t } = useTranslation("home");

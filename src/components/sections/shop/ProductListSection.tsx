@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import ProductCard from "@/components/molecules/ProductCard";
+import ProductCard from "@/components/molecules/common/ProductCard";
 import Container from "@/layouts/Container";
 import FilterSidebar from "@/components/molecules/shop/FilterSidebar";
 import { useProductFilter } from "@/hooks/useProductFilter";

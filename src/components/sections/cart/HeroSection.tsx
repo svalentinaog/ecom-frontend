@@ -1,4 +1,4 @@
-import ComingSoon from "@/components/molecules/ComingSoon";
+import ComingSoon from "@/components/molecules/common/ComingSoon";
 import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {

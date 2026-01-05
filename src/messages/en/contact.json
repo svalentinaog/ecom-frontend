@@ -4,6 +4,20 @@
     "subtitle": "Main promotion area",
     "description": "Contact us for any questions or issues"
   },
+  "infoSection": {
+    "address": {
+      "title": "Address",
+      "description": "123 Main St, Anytown, USA"
+    },
+    "email": {
+      "title": "Email",
+      "description": "contact@example.com"
+    },
+    "phone": {
+      "title": "Phone",
+      "description": "+1 (555) 123-4567"
+    }
+  },
   "formSection": {
     "title": "Contact Form",
     "description": "Contact us for any questions or issues"

@@ -1,5 +1,5 @@
 import Container from "@/layouts/Container";
-import Button from "@/components/atoms/Button";
+import Button from "@/components/atoms/CommonButton";
 import { imageSection } from "@/assets";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";

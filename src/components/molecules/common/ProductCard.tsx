@@ -1,6 +1,6 @@
 import type { Product } from "@/types/Product";
 import { useTranslation } from "react-i18next";
-import Button from "../atoms/Button";
+import CommonButton from "@/components/atoms/CommonButton";
 
 export default function ProductCard({ image, name, price, points }: Product) {
   const { t } = useTranslation("shop");
@@ -19,7 +19,9 @@ export default function ProductCard({ image, name, price, points }: Product) {
           <p>${price.toFixed(2)}</p>
           <p>⭐⭐⭐⭐⭐ {points}</p>
         </div>
-        <Button variant="primary-full-width">{t("product.add_to_cart")}</Button>
+        <CommonButton variant="primary-full-width">
+          {t("product.add_to_cart")}
+        </CommonButton>
       </div>
     </div>
   );

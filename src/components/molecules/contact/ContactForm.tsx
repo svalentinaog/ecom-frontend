@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Button from "@/components/atoms/Button";
+import Button from "@/components/atoms/CommonButton";
 import { useForm } from "react-hook-form";
 
 interface IContactInput {
