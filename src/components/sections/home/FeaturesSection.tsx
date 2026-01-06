@@ -11,20 +11,26 @@ export default function FeaturesSection() {
         <div className="hero-section-features">
           <div className="feature-item">
             <img src={shipping} alt="Envío gratis" />
-            <h3>{t("benefits.shipping.title")}</h3>
-            <p>{t("benefits.shipping.description")}</p>
+            <div>
+              <h3>{t("benefits.shipping.title")}</h3>
+              <p>{t("benefits.shipping.description")}</p>
+            </div>
           </div>
           <div className="separator"></div>
           <div className="feature-item">
             <img src={packaging} alt="Devoluciones en 30 días" />
-            <h3>{t("benefits.returns.title")}</h3>
-            <p>{t("benefits.returns.description")}</p>
+            <div>
+              <h3>{t("benefits.returns.title")}</h3>
+              <p>{t("benefits.returns.description")}</p>
+            </div>
           </div>
           <div className="separator"></div>
           <div className="feature-item">
             <img src={support} alt="Soporte 24/7" />
-            <h3>{t("benefits.support.title")}</h3>
-            <p>{t("benefits.support.description")}</p>
+            <div>
+              <h3>{t("benefits.support.title")}</h3>
+              <p>{t("benefits.support.description")}</p>
+            </div>
           </div>
         </div>
       </Container>
