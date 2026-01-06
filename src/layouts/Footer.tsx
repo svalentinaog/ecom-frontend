@@ -131,7 +131,9 @@ export default function Footer() {
                 </div>
                 <div className="footer-item">
                   <img src={location} alt="location" />
-                  <a href="#">{t("footer.address")}</a>
+                  <a href="https://www.google.com/maps">
+                    {t("footer.address")}
+                  </a>
                 </div>
               </div>
             </div>

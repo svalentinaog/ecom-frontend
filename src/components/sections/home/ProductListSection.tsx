@@ -7,7 +7,7 @@ import ProductFilter from "@/components/molecules/home/ProductFilter";
 import ProductCard from "@/components/molecules/common/ProductCard";
 import Container from "@/layouts/Container";
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import CommonButton from "@/components/atoms/CommonButton";
 
 export default function ProductListSection() {
@@ -54,7 +54,7 @@ export default function ProductListSection() {
 
         <div className="product-cta">
           <CommonButton variant="primary">
-            <a href={getPath("/shop")}>{t("products.view_more")}</a>
+            <Link to={getPath("/shop")}>{t("products.view_more")}</Link>
           </CommonButton>
         </div>
       </div>

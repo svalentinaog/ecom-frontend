@@ -2,7 +2,7 @@ import Container from "@/layouts/Container";
 import Button from "@/components/atoms/CommonButton";
 import { imageSection } from "@/assets";
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 export default function CallToAction() {
   const { t } = useTranslation("common");
@@ -21,7 +21,7 @@ export default function CallToAction() {
             <p>{t("CTA.description")}</p>
             <div>
               <Button variant="primary">
-                <a href={getPath("/contact")}>{t("CTA.btn")}</a>
+                <Link to={getPath("/contact")}>{t("CTA.btn")}</Link>
               </Button>
             </div>
           </div>

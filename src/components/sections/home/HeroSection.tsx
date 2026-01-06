@@ -2,7 +2,7 @@ import Container from "@/layouts/Container";
 import { imageSection } from "@/assets";
 
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Button from "@/components/atoms/CommonButton";
 
 export default function HeroSection() {
@@ -20,7 +20,7 @@ export default function HeroSection() {
             <p>{t("hero.description")}</p>
             <div>
               <Button variant="white">
-                <a href={getPath("/shop")}>{t("hero.cta")}</a>
+                <Link to={getPath("/shop")}>{t("hero.cta")}</Link>
               </Button>
             </div>
           </div>
