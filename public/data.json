@@ -5,6 +5,10 @@
       "es": "Arroz Integral Premium 1kg",
       "en": "Premium Brown Rice 1kg"
     },
+    "description": {
+      "es": "Arroz integral premium de alta calidad, ideal para cocinar.",
+      "en": "Premium quality brown rice, perfect for cooking."
+    },
     "price": 3500,
     "oldPrice": 4200,
     "discount": 16,
@@ -18,6 +22,10 @@
     "name": {
       "es": "Arroz Blanco Parbolizado 1kg",
       "en": "Parboiled White Rice 1kg"
+    },
+    "description": {
+      "es": "Arroz blanco parbolizado, ideal para cocinar.",
+      "en": "Parboiled white rice, perfect for cooking."
     },
     "price": 2800,
     "oldPrice": 2800,
@@ -33,6 +41,10 @@
       "es": "Frijol Cargamanto Rojo 500g",
       "en": "Red Kidney Beans 500g"
     },
+    "description": {
+      "es": "Frijol cargamanto rojo, ideal para cocinar.",
+      "en": "Red kidney beans, perfect for cooking."
+    },
     "price": 4500,
     "oldPrice": 5000,
     "discount": 10,
@@ -44,6 +56,10 @@
   {
     "id": 4,
     "name": { "es": "Frijol Negro Bolón 500g", "en": "Black Beans 500g" },
+    "description": {
+      "es": "Frijol negro bolón, ideal para cocinar.",
+      "en": "Black beans, perfect for cooking."
+    },
     "price": 3800,
     "oldPrice": 3800,
     "discount": 0,
@@ -58,6 +74,10 @@
       "es": "Lenteja Nacional Pardina 500g",
       "en": "National Lentils 500g"
     },
+    "description": {
+      "es": "Lenteja nacional pardina, ideal para cocinar.",
+      "en": "National lentils, perfect for cooking."
+    },
     "price": 3200,
     "oldPrice": 3200,
     "discount": 0,
@@ -69,6 +89,10 @@
   {
     "id": 6,
     "name": { "es": "Garbanzo Extra 500g", "en": "Extra Chickpeas 500g" },
+    "description": {
+      "es": "Garbanzo extra, ideal para cocinar.",
+      "en": "Extra chickpeas, perfect for cooking."
+    },
     "price": 4100,
     "oldPrice": 4800,
     "discount": 14,
@@ -83,6 +107,10 @@
       "es": "Aceite de Oliva Virgen 500ml",
       "en": "Virgin Olive Oil 500ml"
     },
+    "description": {
+      "es": "Aceite de oliva virgen, ideal para cocinar.",
+      "en": "Virgin olive oil, perfect for cooking."
+    },
     "price": 25000,
     "oldPrice": 28500,
     "discount": 12,
@@ -94,6 +122,10 @@
   {
     "id": 8,
     "name": { "es": "Aceite de Girasol 1L", "en": "Sunflower Oil 1L" },
+    "description": {
+      "es": "Aceite de girasol, ideal para cocinar.",
+      "en": "Sunflower oil, perfect for cooking."
+    },
     "price": 12000,
     "oldPrice": 12000,
     "discount": 0,
@@ -105,6 +137,10 @@
   {
     "id": 9,
     "name": { "es": "Pasta Espagueti 500g", "en": "Spaghetti Pasta 500g" },
+    "description": {
+      "es": "Pasta espagueti, ideal para cocinar.",
+      "en": "Spaghetti pasta, perfect for cooking."
+    },
     "price": 2400,
     "oldPrice": 3000,
     "discount": 20,
@@ -118,6 +154,10 @@
     "name": {
       "es": "Pasta Tornillos Integrales 500g",
       "en": "Whole Wheat Fusilli 500g"
+    },
+    "description": {
+      "es": "Pasta tornillos integrales, ideal para cocinar.",
+      "en": "Whole wheat fusilli, perfect for cooking."
     },
     "price": 3100,
     "oldPrice": 3100,

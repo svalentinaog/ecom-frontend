@@ -1,11 +1,11 @@
 .card-product {
-  background: #fff;
+  background: $white;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  border: 1px solid #eee;
+  border: 1px solid $stroke-subtle;
   padding: 4px;
 
   &-image-wrapper {
@@ -28,7 +28,7 @@
 
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: $shadow-base;
     cursor: pointer;
 
     .card-product-image {
@@ -50,6 +50,24 @@
 
     .product-name {
       color: $title;
+    }
+
+    .price-container {
+      display: flex;
+      gap: 8px;
+
+      .price {
+        color: $title;
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        color: $text-paragraph;
+      }
+
+      .discount {
+        color: $discount;
+      }
     }
   }
 }

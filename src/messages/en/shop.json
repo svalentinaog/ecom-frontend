@@ -8,6 +8,10 @@
     "clear": "Clear"
   },
   "product": {
-    "add_to_cart": "Add to cart"
+    "add_to_cart": "Add to cart",
+    "discount": "Discount"
+  },
+  "relatedProducts": {
+    "title": "Other related products"
   }
 }
