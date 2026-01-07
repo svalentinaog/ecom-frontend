@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-interface CategoryGroup {
+export interface CategoryGroup {
   name: string;
   subcategories: string[];
 }
