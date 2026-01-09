@@ -4,18 +4,6 @@
   align-items: center;
   gap: 40px;
 
-  .card-product-detail-gallery {
-    width: 50%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-  }
-
   .card-product-detail-content {
     width: 50%;
     height: 100%;
@@ -63,7 +51,6 @@
     }
   }
 
-  // Responsive Styles
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: 32px;

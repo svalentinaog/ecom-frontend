@@ -3,9 +3,10 @@ import { useTranslation } from "react-i18next";
 import CommonButton from "@/components/atoms/CommonButton";
 import QuantitySelector from "@/components/molecules/productDetail/QuantitySelector";
 import Container from "@/layouts/Container";
+import ProductGallery from "@/components/molecules/productDetail/ProductGallery";
 
 export default function ProductCardDetail({
-  image,
+  images,
   name,
   price,
   rating,
@@ -21,10 +22,7 @@ export default function ProductCardDetail({
   return (
     <Container>
       <div className="card-product-detail">
-        <div className="card-product-detail-gallery">
-          {/* Reemplazar luego esta imagen por una galeria */}
-          <img src={image} alt={displayName} />
-        </div>
+        <ProductGallery images={images} />
         <div className="card-product-detail-content">
           <div className="card-product-detail-content-info">
             <h1 className="product-name">{displayName}</h1>

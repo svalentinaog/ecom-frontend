@@ -14,7 +14,13 @@
     "discount": 16,
     "category": { "es": "Granos", "en": "Grains" },
     "subCategory": { "es": "Arroz", "en": "Rice" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.8
   },
   {
@@ -32,7 +38,13 @@
     "discount": 0,
     "category": { "es": "Granos", "en": "Grains" },
     "subCategory": { "es": "Arroz", "en": "Rice" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.5
   },
   {
@@ -50,7 +62,13 @@
     "discount": 10,
     "category": { "es": "Granos", "en": "Grains" },
     "subCategory": { "es": "Frijol", "en": "Beans" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.7
   },
   {
@@ -65,7 +83,13 @@
     "discount": 0,
     "category": { "es": "Granos", "en": "Grains" },
     "subCategory": { "es": "Frijol", "en": "Beans" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.3
   },
   {
@@ -83,7 +107,13 @@
     "discount": 0,
     "category": { "es": "Granos", "en": "Grains" },
     "subCategory": { "es": "Lentejas", "en": "Lentils" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.6
   },
   {
@@ -98,7 +128,13 @@
     "discount": 14,
     "category": { "es": "Granos", "en": "Grains" },
     "subCategory": { "es": "Garbanzos", "en": "Chickpeas" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.9
   },
   {
@@ -116,7 +152,14 @@
     "discount": 12,
     "category": { "es": "Despensa", "en": "Pantry" },
     "subCategory": { "es": "Aceites", "en": "Oils" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.9
   },
   {
@@ -131,7 +174,13 @@
     "discount": 0,
     "category": { "es": "Despensa", "en": "Pantry" },
     "subCategory": { "es": "Aceites", "en": "Oils" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.2
   },
   {
@@ -146,7 +195,13 @@
     "discount": 20,
     "category": { "es": "Despensa", "en": "Pantry" },
     "subCategory": { "es": "Pastas", "en": "Pasta" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.7
   },
   {
@@ -164,7 +219,13 @@
     "discount": 0,
     "category": { "es": "Despensa", "en": "Pantry" },
     "subCategory": { "es": "Pastas", "en": "Pasta" },
-    "image": "/images/product-image.jpg",
+    "images": [
+      "/images/product-image.jpg",
+      "/images/product-image-1.jpg",
+      "/images/product-image-2.jpg",
+      "/images/product-image-3.jpg",
+      "/images/product-image-4.jpg"
+    ],
     "rating": 4.4
   }
 ]

@@ -12,6 +12,6 @@ export type Product = {
   discount: number;
   category: TranslationMap;
   subCategory: TranslationMap;
-  image: string;
+  images: string[];
   rating: number;
 };

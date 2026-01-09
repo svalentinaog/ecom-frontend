@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 export default function ProductCard({
   id,
-  image,
+  images,
   name,
   price,
   rating,
@@ -26,14 +26,14 @@ export default function ProductCard({
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
-    // Aquí iría la lógica de añadir al carrito
+    // Pendiente lógica de añadir al carrito
     console.log("Add to cart", id);
   };
 
   return (
     <div className="card-product" onClick={handleCardClick}>
       <div className="card-product-image-wrapper">
-        <img className="card-product-image" src={image} alt={displayName} />
+        <img className="card-product-image" src={images[0]} alt={displayName} />
       </div>
       <div className="card-product-content">
         <div className="card-product-info-content">
