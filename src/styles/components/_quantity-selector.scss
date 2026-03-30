@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .quantity-selector {
   display: inline-flex;
   align-items: center;

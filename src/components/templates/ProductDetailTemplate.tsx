@@ -14,7 +14,7 @@ export default function ProductDetailTemplate() {
   useEffect(() => {
     // Simulamos la carga de datos (en un caso real, esto sería una llamada a API por ID)
     axios
-      .get<Product[]>("/data.json")
+      .get<Product[]>("http://localhost:3000/api/products")
       .then((res) => {
         const found = res.data.find((p) => p.id === Number(id));
         setProduct(found || null);

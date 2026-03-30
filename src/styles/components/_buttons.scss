@@ -1,3 +1,5 @@
+@use "sass:color";
+@use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
 // Base general del botón
@@ -16,7 +18,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 
     &:hover {
-      background: darken(#fff, 5%);
+      background: color.adjust(#fff, $lightness: -5%);
     }
   }
 
@@ -25,7 +27,7 @@
     color: $title;
 
     &:hover {
-      background: darken($primary, 5%);
+      background: color.adjust($primary, $lightness: -5%);
     }
   }
 
@@ -35,7 +37,7 @@
     width: 100%;
 
     &:hover {
-      background: darken($primary, 5%);
+      background: color.adjust($primary, $lightness: -5%);
     }
   }
 }

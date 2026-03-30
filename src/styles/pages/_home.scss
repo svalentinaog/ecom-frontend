@@ -1,6 +1,6 @@
-@import './home/_hero-section.scss';
-@import './home/_features-section.scss';
+@use './home/hero-section';
+@use './home/features-section';
 
-@import "../components/product-card";
-@import "../components/product-filter";
-@import "../components/product-list";
+@use "../components/product-card";
+@use "../components/product-filter";
+@use "../components/product-list";

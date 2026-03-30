@@ -1,3 +1,4 @@
+@use "sass:color";
 @use '../abstracts/variables' as v;
 
 .bg-section-shop {
@@ -38,7 +39,7 @@
     }
 
     &:hover {
-      color: darken(v.$primary, 10%);
+      color: color.adjust(v.$primary, $lightness: -10%);
       text-decoration: underline;
     }
   }

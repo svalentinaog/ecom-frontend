@@ -7,7 +7,7 @@ export function useProductDetail(productId: string | undefined) {
 
   useEffect(() => {
     axios
-      .get<Product[]>("/data.json")
+      .get<Product[]>("http://localhost:3000/api/products")
       .then((res) => {
         const found = res.data.find((p) => p.id === Number(productId));
         setProduct(found || null);

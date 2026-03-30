@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 export default function ProductCard({
   id,
-  images,
+  // images,
   name,
   price,
   rating,
@@ -17,12 +17,12 @@ export default function ProductCard({
   const currentLang = (i18n.language as "es" | "en") || "es";
   const displayName = name[currentLang];
 
-  const navigate = useNavigate();
-  const { lang } = useParams();
+  // const navigate = useNavigate();
+  // const { lang } = useParams();
 
-  const handleCardClick = () => {
-    navigate(`/${lang}/product/${id}`);
-  };
+  // const handleCardClick = () => {
+  //   navigate(`/${lang}/product/${id}`);
+  // };
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -31,9 +31,13 @@ export default function ProductCard({
   };
 
   return (
-    <div className="card-product" onClick={handleCardClick}>
+    <div className="card-product">
       <div className="card-product-image-wrapper">
-        <img className="card-product-image" src={images[0]} alt={displayName} />
+        <img
+          className="card-product-image"
+          src="images/product-image.jpg"
+          alt={displayName}
+        />
       </div>
       <div className="card-product-content">
         <div className="card-product-info-content">

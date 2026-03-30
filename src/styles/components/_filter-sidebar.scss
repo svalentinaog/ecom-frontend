@@ -1,5 +1,5 @@
 .filter-sidebar {
-  width: 230px; // Según tu Figma
+  width: 230px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -58,4 +58,10 @@
     accent-color: #2ecc71;
     width: 100%;
   }
+}
+
+.filter {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
 }

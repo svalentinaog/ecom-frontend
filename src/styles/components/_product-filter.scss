@@ -1,4 +1,6 @@
-.filter {
+@use "../abstracts/variables" as *;
+
+.product-filter {
   display: flex;
   gap: 24px;
   align-items: center;

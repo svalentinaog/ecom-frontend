@@ -13,7 +13,7 @@ export function useProductFilter(currentLang: "es" | "en") {
   const [priceLimits, setPriceLimits] = useState({ min: 0, max: 25000 });
 
   useEffect(() => {
-    axios.get<Product[]>("/data.json").then((res) => {
+    axios.get<Product[]>("http://localhost:3000/api/products").then((res) => {
       const data = res.data;
       setProducts(data);
 

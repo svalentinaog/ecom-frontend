@@ -1,24 +1,24 @@
 // Abstracts
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
-@import "./base/reset";
-@import "./base/typography";
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
+@use "./base/reset";
+@use "./base/typography";
 
 // Global Components 
-@import "./components/buttons";
-@import "./components/coming-soon";
-@import "./components/searchbar";
+@use "./components/buttons";
+@use "./components/coming-soon";
+@use "./components/searchbar";
 
 // Layout
-@import "./layout/container";
-@import "./layout/layout";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/CTA";
+@use "./layout/container";
+@use "./layout/layout";
+@use "./layout/header";
+@use "./layout/footer";
+@use "./layout/CTA";
 
 // Pages
-@import "./pages/home";
-@import "./pages/shop";
-@import "./pages/contact";
-@import "./pages/legal-document";
-@import "./pages/product-detail";
+@use "./pages/home";
+@use "./pages/shop";
+@use "./pages/contact";
+@use "./pages/legal-document";
+@use "./pages/product-detail";

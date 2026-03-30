@@ -20,11 +20,13 @@ export default function ProductListSection() {
   const getPath = (path: string) => `/${lang}${path === "/" ? "" : path}`;
 
   useEffect(() => {
-    axios.get<Product[]>("/data.json").then((res) => setProducts(res.data));
+    axios
+      .get<Product[]>("http://localhost:3000/api/products")
+      .then((res) => setProducts(res.data));
   }, []);
 
   const categories = Array.from(
-    new Set(products.map((p) => p.category[currentLang]))
+    new Set(products.map((p) => p.category[currentLang])),
   );
 
   const filteredProducts =

@@ -1,4 +1,4 @@
-@import './contact/_hero-section.scss';
-@import './contact/_info-section.scss';
-@import '../components/_contact-form.scss';
-@import './contact/_contact-form-section.scss';
+@use './contact/hero-section';
+@use './contact/info-section';
+@use '../components/contact-form';
+@use './contact/contact-form-section';

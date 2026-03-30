@@ -1,4 +1,4 @@
-import legalDocs from "../../public/legalDocs.json";
+import legalDocs from "../data/legalDocs.json";
 import { useParams, Navigate } from "react-router-dom";
 import LegalDocumentTemplate from "@/components/templates/LegalDocumentTemplate";
 import type { LegalDocument } from "@/types/LegalDocument";
