@@ -18,17 +18,22 @@ export default function PriceRange({
     onChange([value[0], newVal]);
   };
 
+  const progress = max > 0 ? ((value[1] - min) / (max - min)) * 100 : 0;
+
   return (
     <div className="price-range">
-      <input
-        type="range"
-        min={min}
-        max={max}
-        value={value[1]}
-        onChange={handleMaxChange}
-        className="price-range__slider"
-      />
-      <div className="price-range__info">
+      <div className="price-range__slider-container">
+        <input
+          type="range"
+          min={min}
+          max={max}
+          value={value[1]}
+          onChange={handleMaxChange}
+          className="price-range__slider"
+          style={{ '--progress': `${progress}%` } as React.CSSProperties}
+        />
+      </div>
+      <div className="price-range__label">
         <span>
           ${value[0]} - ${value[1]}
         </span>

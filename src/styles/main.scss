@@ -8,6 +8,12 @@
 @use "./components/buttons";
 @use "./components/coming-soon";
 @use "./components/searchbar";
+@use "./components/filter-sidebar";
+@use "./components/breadcrumbs";
+@use "./components/product-card-detail";
+@use "./components/product-gallery";
+@use "./components/quantity-selector";
+@use "./components/product-list";
 
 // Layout
 @use "./layout/container";

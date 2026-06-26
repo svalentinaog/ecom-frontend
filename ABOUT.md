@@ -1,11 +1,11 @@
 # Ecom App
 
-Aplicación de comercio electrónico desarrollada en un stack moderno como lo son React, TypeScript, Vite y SCSS bajo el patrón 7-1. El objetivo es mantener la funcionalidad y el diseño original, modularizando la UI con principios de Atomic Design (parcialmente aplicado) y añadiendo capacidades de desarrollo rápido.
+Aplicación de comercio electrónico desarrollada en un stack moderno como lo son React, TypeScript, Vite y SASS(SCSS) bajo el patrón 7-1. El objetivo es mantener la funcionalidad y el diseño original, modularizando la UI con principios de Atomic Design (parcialmente aplicado) y añadiendo capacidades de desarrollo rápido.
 
 ## Tecnologías
 
 - Frontend: `React`, `TypeScript`, `Vite`, `React Router DOM`
-- Estilos: `SCSS` con patrón 7-1 (abstracts, base, components, layout, pages)
+- Estilos: `SASS` con patrón 7-1 (abstracts, base, components, layout, pages)
 - Datos: `axios` consumiendo `public/data.json`
 - Calidad: `ESLint` Flat Config (plugins `react-hooks`, `react-refresh`)
 

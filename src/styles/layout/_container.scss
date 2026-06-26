@@ -4,8 +4,8 @@
   padding: 4rem 2rem;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
-    padding: 1rem;
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
   }
 
   @media (min-width: 1024px) {

@@ -15,7 +15,7 @@
     .product-list-shop {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 24px;
       justify-content: center;
     }
@@ -42,10 +42,17 @@
   align-items: center;
   gap: 40px;
 
+  .filter-home {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
   .product-list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 280px));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
     justify-content: center;
   }

@@ -16,9 +16,7 @@ export default function AccordionMenu({
   selected = "",
   onSelect = () => {},
 }: Props) {
-  const [openGroup, setOpenGroup] = useState<string | null>(
-    groups[0]?.name || null
-  );
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
 
   return (
     <div className="accordion">
@@ -36,7 +34,41 @@ export default function AccordionMenu({
             }}
           >
             {group.name}
-            <span className="accordion__icon"></span>
+            <span className="accordion__icon">
+              {openGroup === group.name ? (
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L12 15L18 9"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 6L15 12L9 18"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              )}
+            </span>
           </button>
 
           <div

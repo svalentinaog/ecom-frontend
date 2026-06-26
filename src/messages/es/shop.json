@@ -13,5 +13,6 @@
   },
   "relatedProducts": {
     "title": "Otros productos relacionados"
-  }
+  },
+  "noProducts": "No se hallaron productos que coincidan con tu búsqueda"
 }

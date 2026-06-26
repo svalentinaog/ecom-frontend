@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 
 import type { Product } from "@/types/Product";
+import productsData from "@/data/products.json";
 
 import ProductFilter from "@/components/molecules/home/ProductFilter";
 import ProductCard from "@/components/molecules/common/ProductCard";
@@ -11,19 +11,13 @@ import { useParams, Link } from "react-router-dom";
 import CommonButton from "@/components/atoms/CommonButton";
 
 export default function ProductListSection() {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products] = useState<Product[]>(productsData);
   const [filter, setFilter] = useState<string>("all");
 
   const { t, i18n } = useTranslation("home");
   const currentLang = (i18n.language as "es" | "en") || "es";
   const { lang } = useParams();
   const getPath = (path: string) => `/${lang}${path === "/" ? "" : path}`;
-
-  useEffect(() => {
-    axios
-      .get<Product[]>("http://localhost:3000/api/products")
-      .then((res) => setProducts(res.data));
-  }, []);
 
   const categories = Array.from(
     new Set(products.map((p) => p.category[currentLang])),

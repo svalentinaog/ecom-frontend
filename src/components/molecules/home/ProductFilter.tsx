@@ -3,16 +3,17 @@ type Props = {
   selected: string;
   onSelect: (cat: string) => void;
   allLabel?: string;
+  className?: string;
 };
 
 export default function ProductFilter({
   categories,
   selected,
   onSelect,
-  allLabel = "Todas",
+  allLabel = "Todos",
 }: Props) {
   return (
-    <div className="filter">
+    <div className={`filter-home`}>
       <h4
         className={selected === "all" ? "tab-active" : ""}
         onClick={() => onSelect("all")}
