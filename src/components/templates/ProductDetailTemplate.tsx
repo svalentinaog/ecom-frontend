@@ -7,7 +7,7 @@ import RelatedProducts from "@/components/sections/productDetail/RelatedProducts
 
 export default function ProductDetailTemplate() {
   const { id } = useParams();
-  const product = productsData.find((p) => p.id === Number(id)) || null;
+  const product: Product | null = productsData.find((p) => p.id === Number(id)) || null;
 
   if (!product) return <div>Product not found</div>;
 
