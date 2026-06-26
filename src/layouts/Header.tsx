@@ -67,9 +67,12 @@ export default function Header() {
     setSearch(newValue);
     const currentPath = location.pathname;
     if (newValue.trim()) {
-      // Update search params without full page reload if we're already on shop, otherwise navigate
+      // If there's a search term, clear category filter
+      const newSearchParams = new URLSearchParams();
+      newSearchParams.set("q", newValue.trim());
+      // Update search params without full page reload if already on shop, else navigate
       if (currentPath.includes(`/${lang}/shop`)) {
-        setSearchParams({ q: newValue.trim() });
+        setSearchParams(newSearchParams);
       } else {
         navigate(`/${lang}/shop?q=${encodeURIComponent(newValue.trim())}`);
       }

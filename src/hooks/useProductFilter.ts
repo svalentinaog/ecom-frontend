@@ -2,12 +2,13 @@ import { useState, useMemo } from "react";
 import type { Product } from "@/types/Product";
 import productsData from "@/data/products.json";
 
-export function useProductFilter(currentLang: "es" | "en", searchTerm: string = "") {
+export function useProductFilter(
+    currentLang: "es" | "en",
+    searchTerm: string = "",
+    category: string = "all",
+    priceRange: [number, number] = [0, 25000]
+  ) {
   const [products] = useState<Product[]>(productsData);
-  const [filters, setFilters] = useState({
-    category: "all",
-    priceRange: [0, 25000] as [number, number],
-  });
 
   // Límites dinámicos de precio
   const priceLimits = useMemo(() => {
@@ -18,12 +19,7 @@ export function useProductFilter(currentLang: "es" | "en", searchTerm: string = 
     return { min: 0, max: 25000 };
   }, [products]);
 
-  // Actualizar priceRange cuando priceLimits cambie
-  const [initialized, setInitialized] = useState(false);
-  if (!initialized && products.length > 0) {
-    setFilters((prev) => ({ ...prev, priceRange: [0, priceLimits.max] }));
-    setInitialized(true);
-  }
+
 
   // 1. Agrupación Jerárquica: Categoría > Subcategorías
   const categoryGroups = useMemo(() => {
@@ -46,12 +42,12 @@ export function useProductFilter(currentLang: "es" | "en", searchTerm: string = 
   const filteredProducts = useMemo(() => {
     return products.filter((p) => {
       const matchesCat =
-        filters.category === "all" ||
-        p.category[currentLang] === filters.category ||
-        p.subCategory[currentLang] === filters.category;
+        category === "all" ||
+        p.category[currentLang] === category ||
+        p.subCategory[currentLang] === category;
 
       const matchesPrice =
-        p.price >= filters.priceRange[0] && p.price <= filters.priceRange[1];
+        p.price >= priceRange[0] && p.price <= priceRange[1];
 
       const matchesSearch =
         searchTerm.trim() === "" ||
@@ -60,10 +56,10 @@ export function useProductFilter(currentLang: "es" | "en", searchTerm: string = 
 
       return matchesCat && matchesPrice && matchesSearch;
     });
-  }, [products, filters, currentLang, searchTerm]);
+  }, [products, category, priceRange, currentLang, searchTerm]);
 
   const selectedCategoryInfo = useMemo(() => {
-    if (filters.category === "all") {
+    if (category === "all") {
       return null;
     }
     
@@ -71,13 +67,13 @@ export function useProductFilter(currentLang: "es" | "en", searchTerm: string = 
     let isSubcategory = false;
     
     // Check if it's a parent category
-    const parentGroup = categoryGroups.find(g => g.name === filters.category);
+    const parentGroup = categoryGroups.find(g => g.name === category);
     if (parentGroup) {
-      parentCategory = filters.category;
+      parentCategory = category;
     } else {
         // Check if it's a subcategory, find its parent
         for (const group of categoryGroups) {
-          if (group.subcategories.includes(filters.category)) {
+          if (group.subcategories.includes(category)) {
             parentCategory = group.name;
             isSubcategory = true;
             break;
@@ -88,15 +84,13 @@ export function useProductFilter(currentLang: "es" | "en", searchTerm: string = 
     return {
       parentCategory,
       isSubcategory,
-      selectedCategory: filters.category
+      selectedCategory: category
     };
-  }, [filters.category, categoryGroups]);
+  }, [category, categoryGroups]);
 
   return {
     filteredProducts,
     categoryGroups,
-    filters,
-    setFilters,
     priceLimits,
     selectedCategoryInfo
   };
